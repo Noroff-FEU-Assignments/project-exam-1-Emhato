@@ -20,7 +20,7 @@ async function getPosts() {
             }
             posts.innerHTML += `<a href="blog-post.html?id=${data[i].id}" class="result">
                                         <div class="wrap">
-                                            <div class="image" style="background-image: url('${data[i].featured_media}')"></div>
+                                            <div class="image" style="background-image: url('${data[i].better_featured_image.source_url}')"></div>
                                             <h2>${data[i].title.rendered}</h2>
                                             <p>${data[i].content.rendered}</p>                                            
                                         </div>

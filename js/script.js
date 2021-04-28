@@ -1,3 +1,5 @@
+// Api fetching!
+
 const url = "https://emmatonnessen.com/wp-json/wp/v2/posts/";
 
 const posts = document.querySelector(".posts");
@@ -35,3 +37,19 @@ async function getPosts() {
 }
 
 getPosts();
+
+
+// Hamburger menu
+
+const hamburger = document.querySelector(".fa-bars");
+
+
+const navigation = document.querySelector("nav")
+
+function hamburgerClicked() {
+    console.log("Yooo");
+    navigation.style.display = "block"
+}
+
+hamburger.addEventListener("click", hamburgerClicked);
+

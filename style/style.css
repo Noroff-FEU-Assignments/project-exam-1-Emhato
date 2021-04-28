@@ -26,7 +26,7 @@ p {
 }
 
 h1 {
-    color: #fff;
+    color: var(--black);
     margin: auto;
 }
 
@@ -39,6 +39,10 @@ h1 {
 }
 
 /*Mobile top nav*/
+
+nav {
+    display: none;
+}
 
   
 li {
@@ -57,7 +61,7 @@ li a {
   
   
 .fa-bars {
-    color: #fff;
+    color: var(--black);
     /* padding: 20px; */
     /* background-image: url(/images/nav-bar-desktop.jpg);
     background-size: 100% cover; */
@@ -69,8 +73,10 @@ li a {
 .top-nav-mobile {
     background-image: url(/images/sunrise.jpg);
     display: flex;
-    background-position: left 40% center;
+    background-position: center top 50%;
+    background-repeat: no-repeat;
     /* background-position-y: top; */
     align-items: center;
     height: 80px;
+    /* background-size: 100%; */
 }

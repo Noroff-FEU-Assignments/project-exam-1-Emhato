@@ -1,0 +1,26 @@
+/* The root*/
+
+:root {
+    --orange: #FC8200;
+    --bacground: #FFFEFC;
+    --black: #060C0A;
+    --lightorange: #FEE6CC;
+}
+
+
+
+
+/* Images*/
+
+.image {
+    height: 200px;
+}
+
+/* .wp-block-image {
+    height: 200px;
+} */
+
+img {
+    height: 166.5px;
+    width: 250;
+}

@@ -1,4 +1,8 @@
 /* The root*/
+* {
+    margin: 0;
+    padding: 0;
+  }
 
 :root {
     --orange: #FC8200;
@@ -7,6 +11,24 @@
     --lightorange: #FEE6CC;
 }
 
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: var(--bacground);
+}
+
+/* font */
+
+p {
+    font-family: 'montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 28px;
+    margin: 20px 20px 20px 20px;
+}
+
+h1 {
+    color: #fff;
+    margin: auto;
+}
 
 
 
@@ -16,11 +38,39 @@
     height: 200px;
 }
 
-/* .wp-block-image {
-    height: 200px;
-} */
+/*Mobile top nav*/
 
-img {
-    height: 166.5px;
-    width: 250;
+  
+li {
+    list-style: none;
+    margin-left: 20px;
+    padding: 20px 0 20px 0;
+}
+  
+li a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 3px;
+}
+  
+  
+.fa-bars {
+    color: #fff;
+    /* padding: 20px; */
+    /* background-image: url(/images/nav-bar-desktop.jpg);
+    background-size: 100% cover; */
+    padding-right: 20px;
+    position: absolute;
+    right: 0;
+}
+
+.top-nav-mobile {
+    background-image: url(/images/sunrise.jpg);
+    display: flex;
+    background-position: left 40% center;
+    /* background-position-y: top; */
+    align-items: center;
+    height: 80px;
 }

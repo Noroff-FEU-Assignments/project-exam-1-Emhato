@@ -11,6 +11,7 @@ async function getPosts() {
         const data = await response.json();
 
         console.log(data);
+        
 
         posts.innerHTML = "";
 
@@ -20,12 +21,15 @@ async function getPosts() {
             if (i === 10) {
                 break;
             }
+            console.log(data[i].id)
 
             // Add anchor tag and href here!
-            posts.innerHTML += `<div class="card">
+            posts.innerHTML += `<a href="blog-post.html?id=${data[i].id}" class="result">
+                                <div class="card">
                                 <h2>${data[i].title.rendered}</h2>
                                 <p>${data[i].excerpt.rendered}</p>
-                                </div>`;
+                                </div>
+                                </a>`;
         }
     } catch (error) {
         console.log(error);

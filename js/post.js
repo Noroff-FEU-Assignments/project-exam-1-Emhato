@@ -6,7 +6,7 @@ const params = new URLSearchParams(queryString);
 
 const idParam = params.get("id");
 
-const url = "https://www.emmatonnessen.com/wp-json/wp/v2/posts/?id=" + idParam;
+const url = "https://www.emmatonnessen.com/wp-json/wp/v2/posts/" + idParam;
 
 console.log(url)
 
@@ -24,18 +24,18 @@ async function getDetails() {
 
         post.innerHTML = "";
 
-        for (let i = 0; i < data.length; i++) {
+        // for (let i = 0; i < data.length; i++) {
 
-            title.innerHTML = `${data[0].title.rendered}`;
+            title.innerHTML = `${data.title.rendered}`;
 
             post.innerHTML = `<div class="results">
-                                <h1>${data[0].title.rendered}</h1>
+                                <h1>${data.title.rendered}</h1>
                                 <div class="post-image"
-                                    style="background-image: url('${data[0].better_featured_image.source_url}')"></div>
-                                <p>${data[0].content.rendered}</p>
+                                    style="background-image: url('${data.better_featured_image.source_url}')"></div>
+                                <p>${data.content.rendered}</p>
                             </div>`;
         
-        }
+        // }
 
     } catch (error) {
         console.log(error);

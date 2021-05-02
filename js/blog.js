@@ -21,7 +21,6 @@ async function getPosts() {
             if (i === 10) {
                 break;
             }
-            console.log(data[i].id)
 
             // Add anchor tag and href here!
             posts.innerHTML += `<a href="blog-post.html?id=${data[i].id}" class="result">
@@ -46,9 +45,24 @@ getPosts();
 
 const showMore = document.querySelector("button");
 
+// let numberOfClicks = 1;
+
+// function clicks() {
+//     numberOfClicks += 1;
+// }
 
 
-urlTwo = "https://emmatonnessen.com/wp-json/wp/v2/posts/?page=2"
+// showMore.addEventListener("click", clicks);
+
+// SEE IF YOU CAN USE OFFSET NUMBERS INSTEAD OF PAGE NUMBERS WITH THE HELP OF 10 INCREMENTS
+
+
+urlTwo = "https://emmatonnessen.com/wp-json/wp/v2/posts/?offset=10"
+
+showMore.addEventListener("click", function(){
+    console.log(urlTwo)
+});
+
 
 async function morePosts() {
     try {
@@ -68,11 +82,12 @@ async function morePosts() {
                 break;
             }
 
-            // Add anchor tag and href here!
-            posts.innerHTML += `<div class="card">
+            posts.innerHTML += `<a href="blog-post.html?id=${data[i].id}" class="result">
+                                <div class="card">
                                 <h2>${data[i].title.rendered}</h2>
                                 <p>${data[i].excerpt.rendered}</p>
-                                </div>`;
+                                </div>
+                                </a>`;
         }
 
     } catch (error) {
@@ -83,3 +98,12 @@ async function morePosts() {
 }
 
 showMore.addEventListener("click", morePosts);
+
+// let numberOfClicks = 1;
+
+// function clicks() {
+//     numberOfClicks += 1;
+//     console.log(numberOfClicks);
+// }
+
+// showMore.addEventListener("click", clicks);

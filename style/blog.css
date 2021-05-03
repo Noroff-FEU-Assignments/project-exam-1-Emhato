@@ -17,11 +17,11 @@ body {
     border-radius: 0px 20px;
 }
 
-.wrapper {
+/* .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 
 .show-more {
     width: fit-content;
@@ -38,5 +38,33 @@ body {
 .continue {
     color: var(--orange);
     font-weight: 700;
-    /* margin-top: -30px; */
+}
+
+/* above ipad */
+
+@media only screen and (min-width: 770px) { 
+
+    .posts {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-evenly; */
+        /* margin: 30px; */
+    }
+
+    .card {
+        max-width: 300px;
+        margin: 20px;
+        height: 280px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+
+    .show-more {
+        margin: 30px 20px;
+    }
 }

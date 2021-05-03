@@ -9,4 +9,50 @@ h1 {
 #form {
     background-color: var(--lightorange);
     border-radius: 0 30px;
+    margin: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.form-error {
+    color: red;
+    font-size: 0.9rem;
+    display: none;
+}
+
+input {
+    height: 50px;
+    margin-bottom: 30px;
+    border-color: var(--orange);
+}
+  
+textarea {
+    height: 200px;
+    border-color: var(--orange);
+    border-width: 2px;
+}
+
+.send {
+    width: fit-content;
+    align-self: center;
+    margin-top: 30px;
+    padding-top: 0px;
+    padding-bottom: 0;
+}
+
+/* above ipad */
+
+@media only screen and (min-width: 770px) {
+    #form {
+        max-width: 700px;
+    }
+
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+
 }

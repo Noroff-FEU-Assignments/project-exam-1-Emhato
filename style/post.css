@@ -12,3 +12,24 @@ a {
     color: var(--orange);
 }
 
+/* above ipad */
+
+@media only screen and (min-width: 770px) {
+
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .post-image {
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 533px;
+    }
+
+    h1 {
+        margin-left: 20px;
+    }
+
+}
+

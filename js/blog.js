@@ -1,6 +1,6 @@
 // List of posts
 
-const url = "https://emmatonnessen.com/wp-json/wp/v2/posts/";
+const url = "https://emmatonnessen.com/wp-json/wp/v2/posts/?page=1";
 
 const posts = document.querySelector(".posts");
 
@@ -25,8 +25,9 @@ async function getPosts() {
             // Add anchor tag and href here!
             posts.innerHTML += `<a href="blog-post.html?id=${data[i].id}" class="result">
                                 <div class="card">
-                                <h2>${data[i].title.rendered}</h2>
+                                <h3>${data[i].title.rendered}</h3>
                                 <p>${data[i].excerpt.rendered}</p>
+                                <p class="continue">Read more <i class="fas fa-arrow-right"></i></p>
                                 </div>
                                 </a>`;
         }
@@ -57,11 +58,8 @@ const showMore = document.querySelector("button");
 // SEE IF YOU CAN USE OFFSET NUMBERS INSTEAD OF PAGE NUMBERS WITH THE HELP OF 10 INCREMENTS
 
 
-urlTwo = "https://emmatonnessen.com/wp-json/wp/v2/posts/?offset=10"
+urlTwo = "https://emmatonnessen.com/wp-json/wp/v2/posts/?page=2"
 
-showMore.addEventListener("click", function(){
-    console.log(urlTwo)
-});
 
 
 async function morePosts() {
@@ -72,7 +70,7 @@ async function morePosts() {
 
         console.log(data);
 
-        // showMore.style.display = "none";
+        showMore.style.display = "none";
 
 
         for (let i = 0; i < data.length; i++) {
@@ -84,8 +82,9 @@ async function morePosts() {
 
             posts.innerHTML += `<a href="blog-post.html?id=${data[i].id}" class="result">
                                 <div class="card">
-                                <h2>${data[i].title.rendered}</h2>
-                                <p>${data[i].excerpt.rendered}</p>
+                                <h3>${data[i].title.rendered}</h3>
+                                <p class="short-text">${data[i].excerpt.rendered}</p>
+                                <p class="continue">Read more <i class="fas fa-arrow-right"></i></p>
                                 </div>
                                 </a>`;
         }

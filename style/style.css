@@ -9,6 +9,8 @@
     --bacground: #FFFEFC;
     --black: #060C0A;
     --lightorange: #FEE6CC;
+    /* --height: 1.4rem;
+    line-height: var(--height); */
 }
 
 body {
@@ -27,14 +29,40 @@ p {
 
 h1 {
     color: var(--black);
-    margin: auto;
+    margin: 20px auto;
 }
 
 h2 {
     margin: 40px 20px 20px 20px;
+    margin: auto;
 }
 
+h3 {
+    margin-left: 20px;
+}
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*Buttons*/
+
+button {
+    background-color: var(--black);
+    color: var(--bacground);
+    padding: 7px;
+    border-color: var(--orange);
+    border-width: 3px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    height: 65px;
+}
+
+button:hover {
+    background-color: var(--orange);
+}
 
 /* Images*/
 

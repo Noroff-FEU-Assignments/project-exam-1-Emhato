@@ -1,0 +1,12 @@
+/*Header*/
+
+h1 {
+    margin-left: 20px;
+}
+
+/* Form*/
+
+#form {
+    background-color: var(--lightorange);
+    border-radius: 0 30px;
+}

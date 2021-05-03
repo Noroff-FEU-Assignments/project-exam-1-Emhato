@@ -1,5 +1,14 @@
 /* Image*/
 
 .post-image {
-    height: 100px;
+    height: 250px;
+    /* width: 375px; */
+    background-size: cover;
 }
+
+/*Links*/
+
+a {
+    color: var(--orange);
+}
+

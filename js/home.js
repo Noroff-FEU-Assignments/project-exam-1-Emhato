@@ -20,9 +20,13 @@ async function getPosts() {
             if (i === 1) {
                 break;
             }
-            images.innerHTML += `<h2>${data[0].title.rendered}</h2>
-                                <div class="carousel-image" style="background-image: url('${data[0].better_featured_image.source_url}')"></div>
-                                <p>${data[0].excerpt.rendered}`;
+            images.innerHTML += `<section class="carousel-section">
+                                    <figure class="carousel-image image1" style="background-image: url('images/sunrise.jpg')"></figure>
+                                    <figure class="carousel-image image2 selected" style="background-image: url('${data[0].better_featured_image.source_url}')"></figure>
+                                    <figure class="carousel-image image3" style="background-image: url('${data[1].better_featured_image.source_url}')"></figure>
+                                    <figure class="carousel-image image4" style="background-image: url('${data[2].better_featured_image.source_url}')"></figure>
+                                </section>
+                                    `;
         }
     } catch (error) {
         console.log(error);
@@ -33,6 +37,27 @@ async function getPosts() {
 }
 
 getPosts();
+
+
+const image1 = document.querySelector(".image1");
+const image2 = document.querySelector(".image2");
+const image3 = document.querySelector(".image3");
+const image4 = document.querySelector(".image4");
+
+function antiSelect() {
+    document.querySelector(".selected").classList.remove("selected");
+}
+
+image1.addEventListener("click", function() {
+    classList.add("selected")
+});
+
+
+
+image1.addEventListener("click", antiSelect);
+image2.addEventListener("click", antiSelect);
+image3.addEventListener("click", antiSelect);
+image4.addEventListener("click", antiSelect);
 
 // <a href="blog-post.html?id=${data[i].id}" class="result">
 //                                         <div class="wrap">

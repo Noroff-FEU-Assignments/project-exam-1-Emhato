@@ -3,4 +3,16 @@
 .carousel-image {
     width: 375px;
     height: 250px;
+    background-size: cover;
+    flex: 1;
+}
+
+.carousel-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.selected {
+    flex: 4;
 }

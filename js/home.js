@@ -36,7 +36,7 @@ async function getPosts() {
                                 </section>
                                     `;
             
-            theText.innerHTML += `<p class="text text2">${data[0].ec.rendered}</p>
+            theText.innerHTML += `<p class="text text2">${data[0].content.rendered}</p>
                                 <p class="text text3">${data[1].content.rendered}</p>
                                 <p class="text text4">${data[2].content.rendered}</p>
                                 `;
@@ -45,7 +45,7 @@ async function getPosts() {
     } catch (error) {
         console.log(error);
         console.log("An error occurred");
-        posts.innerHTML = "An error has occured, sorry for the inconvinience this may cause!";
+        theHeader.innerHTML = "An error has occured, sorry for the inconvinience this may cause!";
     }
 
 }

@@ -4,6 +4,7 @@
     width: 375px;
     height: 250px;
     background-size: cover;
+    background-position: center;
     flex: 1;
 }
 
@@ -15,4 +16,27 @@
 
 .selected {
     flex: 4;
+}
+
+.something {
+    color: red;
+}
+
+
+/* text */
+
+.header {
+    display: none;
+}
+
+.header1 {
+    display: block;
+}
+
+.text {
+    display: none;
+}
+
+.text1 {
+    display: block;
 }

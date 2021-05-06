@@ -6,6 +6,8 @@
     background-size: cover;
     background-position: center;
     flex: 1;
+    opacity: 30%;
+    cursor: pointer;
 }
 
 .carousel-section {
@@ -16,6 +18,7 @@
 
 .selected {
     flex: 4;
+    opacity: 100%;
 }
 
 .something {
@@ -39,4 +42,20 @@
 
 .text1 {
     display: block;
+}
+
+/* Circle indicator */
+
+.circle {
+    height: 20px;
+    width: 20px;
+    color: var(--orange);
+}
+
+.circle1 {
+    display: none;
+}
+
+.circle2-2, .circle3-3, .circle4-4 {
+    display: none;
 }

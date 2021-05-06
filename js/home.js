@@ -36,9 +36,9 @@ async function getPosts() {
                                 </section>
                                     `;
             
-            theText.innerHTML += `<p class="text text2">${data[0].content.rendered}</p>
-                                <p class="text text3">${data[1].content.rendered}</p>
-                                <p class="text text4">${data[2].content.rendered}</p>
+            theText.innerHTML += `<div class="text text2">${data[0].excerpt.rendered}</div>
+                                <div class="text text3">${data[1].excerpt.rendered}</div>
+                                <div class="text text4">${data[2].excerpt.rendered}</div>
                                 `;
 
         }

@@ -122,3 +122,45 @@ li a {
     height: 80px;
     /* background-size: 100%; */
 }
+
+
+/* Mobile bottom nav */
+
+.bottom-nav {
+    background-color: var(--black);
+    color: var(--bacground);
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.list-bottom {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list-bottom a {
+    font-size: 1rem;
+    border-bottom: none;
+}
+
+.home-bottom, .about-bottom, .contact-bottom, .blog-bottom {
+    padding-top: 20px;
+}
+
+.info-bottom {
+    font-size: 0.6rem;
+    margin: 0 0 0 20px;
+    
+}
+
+.info-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-bottom {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    margin-top: 0;
+
+}

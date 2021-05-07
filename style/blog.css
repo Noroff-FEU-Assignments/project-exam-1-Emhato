@@ -1,3 +1,10 @@
+/* Heading */
+
+/* h2 {
+    margin-top: 30px;
+    margin-left: 20px;
+} */
+
 /* card*/
 
 html {
@@ -5,14 +12,16 @@ html {
     line-height: var(--height);
 }
 
-body {
+/* body {
     margin-left: 20px;
     margin-right: 20px;
-}
+} */
 
 .card {
     background-color: var(--lightorange);
     margin: 30px auto;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 10px;
     border-radius: 0px 20px;
 }

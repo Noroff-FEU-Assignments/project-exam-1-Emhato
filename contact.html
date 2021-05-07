@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style/contact.css">
   </head>
 <body>
-    <header>
+    <!-- <header>
         <label for="hamburger"><i class="fas fa-bars"></i></label>
         <input type="checkbox" id="hamburger">
         <nav>
@@ -22,9 +22,28 @@
             <li><a class="contact" href=contact.html>Contact</a></li>
           </ul>
         </nav>
+    </header> -->
+    <header>
+      <div class="full-nav">
+          <div class="top-nav-mobile">
+              <h1>Contact</h1>
+              <div hamburger-button>
+                  <i class="fas fa-bars"></i>
+                  <i class="fas fa-times"></i>
+              </div>
+          </div>
+          <nav>
+          <ul>
+              <li><a class="home" href=index.html>Home</a></li>
+              <li><a class="about" href=about.html>About</a></li>
+              <li><a class="blog" href="blog.html">Blog</a></li>            
+              <li><a class="contact" href=contact.html>Contact</a></li>
+          </ul>
+          </nav>
+      </div>
     </header>
     <main>
-        <h1>I would love to hear from you!</h1>
+        <h2>I would love to hear from you!</h2>
         <p>Send me an email if you have any thoughts about the blog, or if you want to share some good news with me!</p>
         <form id="form">
             <div class="message"></div>

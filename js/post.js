@@ -29,9 +29,9 @@ async function getDetails() {
             title.innerHTML = `${data.title.rendered}`;
 
             post.innerHTML = `<div class="results">
-                                <h1>${data.title.rendered}</h1>
+                                <h2>${data.title.rendered}</h2>
                                 <div class="post-image"
-                                    style="background-image: url('${data.better_featured_image.source_url}')"></div>
+                                    style="background-image: url('${data.better_featured_image.source_url}')" alt="${data.title.rendered}"></div>
                                 <p>${data.content.rendered}</p>
                             </div>`;
         

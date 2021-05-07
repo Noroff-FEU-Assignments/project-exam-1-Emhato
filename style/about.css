@@ -20,16 +20,19 @@ img {
     align-self: center;
 }
 
-h2 {
+h3 {
     font-size: 1rem;
     margin-top: 10px;
+    align-self: center;
+    margin-left: 0;
 }
 
 /*Header*/
 
-h1 {
+/* h2 {
+    margin-top: 30px;
     margin-left: 20px;
-}
+} */
 
 /* above ipad */
 

@@ -6,6 +6,13 @@
     background-size: cover;
 }
 
+/* header */
+
+/* h2 {
+    margin-top: 30px;
+    margin-left: 20px;
+} */
+
 /*Links*/
 
 a {
@@ -27,7 +34,7 @@ a {
         height: 533px;
     }
 
-    h1 {
+    h2 {
         margin-left: 20px;
     }
 

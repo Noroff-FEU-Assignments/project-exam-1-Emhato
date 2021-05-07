@@ -29,10 +29,10 @@ async function getPosts() {
                                 `;
 
             images.innerHTML += `<section class="carousel-section">
-                                    <figure id="image1" class="carousel-image image1 selected" style="background-image: url('images/sunrise.jpg')"></figure>
-                                    <figure class="carousel-image image2" style="background-image: url('${data[0].better_featured_image.source_url}')"></figure>
-                                    <figure class="carousel-image image3" style="background-image: url('${data[1].better_featured_image.source_url}')"></figure>
-                                    <figure class="carousel-image image4" style="background-image: url('${data[2].better_featured_image.source_url}')"></figure>
+                                    <figure id="image1" class="carousel-image image1 selected" style="background-image: url('images/sunrise.jpg')" alt="Sunrise"></figure>
+                                    <figure class="carousel-image image2" style="background-image: url('${data[0].better_featured_image.source_url}')" alt="${data[0].title.rendered}"></figure>
+                                    <figure class="carousel-image image3" style="background-image: url('${data[1].better_featured_image.source_url}')" ${data[1].title.rendered}></figure>
+                                    <figure class="carousel-image image4" style="background-image: url('${data[2].better_featured_image.source_url}')" ${data[2].title.rendered}></figure>
                                 </section>
                                     `;
             

@@ -12,10 +12,6 @@ html {
     line-height: var(--height);
 }
 
-/* body {
-    margin-left: 20px;
-    margin-right: 20px;
-} */
 
 .card {
     background-color: var(--lightorange);

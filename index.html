@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/blog.css">
 </head>
 <body>
     <header>
@@ -34,7 +35,9 @@
         <div class="carousel-header">
             <h2 class="header header1">Welcome to The Hopeful News!</h2>
         </div>        
-        <div class="carousel-images"></div>
+        <div class="carousel-images">
+            <div class="loader"></div>
+        </div>
         <div class="circle-indicator">
             <span class="circle circle-full"><i class="fas fa-circle"></i></span>
             <span class="circle circle2"><i class="far fa-circle"></i></span>
@@ -50,9 +53,15 @@
         <button class="read-more">Read hopeful news now!</button>        
         <!-- <h1>The hopeful news blog</h1> -->
         <h3>Latest news</h3>
-        <div class="posts">
+        <!-- <div class="posts">
             <button class="show-more">Show more</button>
-        </div>
+        </div> -->
+        <div class="wrapper">
+            <div class="posts">
+              <div class="loader"></div>
+            </div>
+            <button class="show-more">Show more</button>
+          </div>
     </main>
     <footer>
         <div class="bottom-nav">
@@ -72,5 +81,6 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/home.js"></script>
+    <script src="js/blog.js"></script>
 </body>
 </html>

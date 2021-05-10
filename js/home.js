@@ -1,6 +1,6 @@
 // Carousel
 
-const url = "https://emmatonnessen.com/wp-json/wp/v2/posts/";
+const urlHome = "https://emmatonnessen.com/wp-json/wp/v2/posts/";
 
 const images = document.querySelector(".carousel-images");
 const theHeader = document.querySelector(".carousel-header");
@@ -8,7 +8,7 @@ const theText = document.querySelector(".carousel-text")
 
 async function getPosts() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(urlHome);
 
         const data = await response.json();
 

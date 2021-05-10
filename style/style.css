@@ -115,13 +115,12 @@ li a {
 .top-nav-mobile {
     background-image: url(/images/sunrise.jpg);
     display: flex;
-    background-position: center top 15%;
+    background-position: center top 12%;
     background-repeat: no-repeat;
-    /* background-position-y: top; */
     align-items: center;
     height: 80px;
-    /* background-size: 100%; */
 }
+
 
 
 /* Mobile bottom nav */
@@ -162,5 +161,61 @@ li a {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.5rem;
     margin-top: 0;
+
+}
+
+
+@media only screen and (min-width: 770px) {
+    /* top nav */
+
+    .top-nav-mobile {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        background: rgb(254,189,58);
+        background: linear-gradient(90deg, rgba(255,174,1,1) 0%, rgba(255,207,73,1) 60%, rgba(252,130,0,1) 100%);
+        background-repeat: no-repeat;
+        height: 80px;
+        background-position: center top 12%;
+        background-size: 100%;
+    }
+
+    .full-nav li {
+        display: inline-block;
+        padding: 25px 15px 15px 15px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    li a {
+        border-bottom: none;
+        font-size: 1.5rem;
+    }
+
+    .list-top {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    li a:hover {
+        color: var(--bacground);
+    }
+    
+    /* bottom nav */
+
+    .list-bottom a {
+        font-size: 1.2rem;
+    }
+
+    .info-bottom {
+        font-size: 0.8rem;
+    }
+
+    .name-bottom {
+        font-size: 2rem;
+    }
 
 }

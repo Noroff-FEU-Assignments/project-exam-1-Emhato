@@ -70,7 +70,7 @@ h2 {
     display: block;
 }
 
-.carousel-text {
+.text-section {
     display: flex;
     flex-direction: column;
 }
@@ -102,8 +102,16 @@ h2 {
     margin-top: 40px;
 }
 
+/* ipad to desktop */
+@media only screen and (min-width: 770px) {
+    main {
+        max-width: 800px;
+        align-content: center;
+        margin: 0 auto;
+    }
+}
 
-/* Above ipad */
+/* desktop */
 
 @media only screen and (min-width: 1200px) {
     /* .desktop-grid {
@@ -126,6 +134,12 @@ h2 {
     .text {
         grid-area: paragraph;
     } */
+
+    main {
+        max-width: none;
+        /* align-content: center;
+        margin: 0 auto; */
+    }
 
     .carousel-image {
         width: 675px;

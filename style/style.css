@@ -82,12 +82,14 @@ button {
     border-width: 3px;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2rem;
     height: 65px;
 }
 
 button:hover {
-    background-color: var(--orange);
+    /* background-color: var(--orange); */
+    background: rgb(254,189,58);
+    background: linear-gradient(90deg, rgba(255,174,1,1) 0%, rgba(255,207,73,1) 60%, rgba(252,130,0,1) 100%);
 }
 
 /* Images*/

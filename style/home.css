@@ -1,37 +1,57 @@
+/* whole page */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Carousel image*/
 
 .carousel-image {
-    width: 375px;
-    height: 250px;
+    /* width: 375px;
+    height: 250px; */
+    width: 488px;
+    height: 325px;
     background-size: cover;
     background-position: center;
     flex: 1;
     opacity: 30%;
     cursor: pointer;
+    /* filter: blur(0.5px); */
 }
 
 .carousel-section {
     /* margin-top: 40px; */
     margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
 }
 
 .selected {
-    flex: 4;
+    flex: 6;
     opacity: 100%;
+    /* filter: blur(0px); */
 }
 
 .something {
     color: red;
 }
 
+.carousel-circle {
+    display: flex;
+    flex-direction: column;
+}
 
 /* text */
 
 h2 {
-    margin-top: 50px;
-    margin-bottom: 10px;
-    margin-left: 20px;
+    margin: 50px 20px 10px 20px;
+}
+
+.latest-news {
+    margin: 60px 20px 0px 20px;
+    font-size: 2rem;
 }
 
 .header {
@@ -50,6 +70,11 @@ h2 {
     display: block;
 }
 
+.carousel-text {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Circle indicator */
 
 .circle {
@@ -64,4 +89,72 @@ h2 {
 
 .circle2-2, .circle3-3, .circle4-4 {
     display: none;
+}
+
+.circle-indicator {
+    align-self: center;
+}
+
+/* buttons */ 
+
+.read-more {
+    align-self: center;
+    margin-top: 40px;
+}
+
+
+/* Above ipad */
+
+@media only screen and (min-width: 1200px) {
+    /* .desktop-grid {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: max-content;
+        grid-template-areas: 
+                        'carousel header'
+                        'carousel paragraph';
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .carousel-circle {
+        grid-area: carousel;
+    }
+
+    .text {
+        grid-area: paragraph;
+    } */
+
+    .carousel-image {
+        width: 675px;
+        height: 450px;
+    }
+
+    .carousel-section {
+        max-width: 800px;
+    }
+
+    /* main {
+        max-width: 800px;
+        align-content: center;
+        margin: 0 auto;
+    } */
+
+    .desktop-flex {
+        display: flex;
+    }
+
+    /* .carousel-text {
+        display: flex;
+        flex-direction: column;
+    } */
+
+
+    .selected {
+        flex: 10;
+        /* filter: blur(0px); */
+    }
+
 }

@@ -69,10 +69,6 @@ getPosts().then(() => {
 
     const circleIndicator = document.querySelector(".circle-indicator")
 
-    const circleFull = document.querySelector(".circle-full");
-    const circle2 = document.querySelector(".circle2");
-    const circle3 = document.querySelector(".circle3");
-    const circle4 = document.querySelector(".circle4");
     
     image1.addEventListener("click", function() {
         //Image

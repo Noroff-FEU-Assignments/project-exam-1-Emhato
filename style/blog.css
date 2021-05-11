@@ -12,6 +12,10 @@ html {
     line-height: var(--height);
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
 
 .card {
     background-color: var(--lightorange);

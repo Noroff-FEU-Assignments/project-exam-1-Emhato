@@ -50,6 +50,8 @@ async function getPosts() {
 
 }
 
+/* <button class="read-more">Read more!<a href="blog-post.html?id=${data[i].id}" class="result"></a></button> */
+
 
 getPosts().then(() => {
     const image1 = document.querySelector(".image1");
@@ -68,6 +70,8 @@ getPosts().then(() => {
     const text4 = document.querySelector(".text4");
 
     const circleIndicator = document.querySelector(".circle-indicator")
+
+    const readMore = document.querySelector(".read-more")
 
     
     image1.addEventListener("click", function() {
@@ -100,6 +104,10 @@ getPosts().then(() => {
                                     <span class="circle circle3"><i class="far fa-circle"></i></span>
                                     <span class="circle circle4"><i class="far fa-circle"></i></span>
                                     `;
+
+        // button
+        // readMore.innerHTML = `<a href="about.html">Show more!</a>`;
+
     });
 
     image2.addEventListener("click", function() {
@@ -131,6 +139,9 @@ getPosts().then(() => {
                                     <span class="circle circle3"><i class="far fa-circle"></i></span>
                                     <span class="circle circle4"><i class="far fa-circle"></i></span>
                                     `;
+
+        // button
+        // readMore.innerHTML = `<a href="blog-post.html?id=${data[0].id}">Show more!</a>`;
     });
 
     image3.addEventListener("click", function() {

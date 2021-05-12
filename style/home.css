@@ -102,6 +102,10 @@ h2 {
     margin-top: 40px;
 }
 
+.read-more a {
+    color: var(--bacground);
+}
+
 /* ipad to desktop */
 @media only screen and (min-width: 770px) {
     main {

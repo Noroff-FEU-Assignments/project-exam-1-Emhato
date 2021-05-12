@@ -4,7 +4,11 @@
     height: 250px;
     /* width: 375px; */
     background-size: cover;
+    background-position: bottom;
+    cursor: pointer;
 }
+
+
 
 /* header */
 
@@ -17,6 +21,17 @@
 
 a {
     color: var(--orange);
+}
+
+/* focused image */
+
+.background {
+    background-color: rgba(6,12,10, 1);
+    /* filter: blur(2px); */
+}
+
+.highlight-image {
+    filter: blur(0px);
 }
 
 /* above ipad */
@@ -36,6 +51,12 @@ a {
 
     h2 {
         margin-left: 20px;
+    }
+
+    .enlarged-image {
+        height: 625px;
+        width: 987.5px;
+        align-self: center;
     }
 
 }

@@ -68,4 +68,8 @@ html {
     .show-more {
         margin: 30px 20px;
     }
+
+    .blog {
+        color: var(--bacground);
+    }
 }

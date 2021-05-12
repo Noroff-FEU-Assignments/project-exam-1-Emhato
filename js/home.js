@@ -4,7 +4,8 @@ const urlHome = "https://emmatonnessen.com/wp-json/wp/v2/posts/";
 
 const images = document.querySelector(".carousel-images");
 const theHeader = document.querySelector(".carousel-header");
-const theText = document.querySelector(".carousel-text")
+const theText = document.querySelector(".carousel-text");
+const buttonPlace = document.querySelector(".text-section");
 
 async function getPosts() {
     try {
@@ -41,6 +42,13 @@ async function getPosts() {
                                 <div class="text text4">${data[2].excerpt.rendered}</div>
                                 `;
 
+
+            buttonPlace.innerHTML += `<a href="about.html" class="readMoreButton button1"><button class="read-more">Read more!</button></a>
+                                    <a href="blog-post.html?id=${data[0].id}" class="readMoreButton button2"><button class="read-more">Read more!</button></a>
+                                    <a href="blog-post.html?id=${data[1].id}" class="readMoreButton button3"><button class="read-more">Read more!</button></a>
+                                    <a href="blog-post.html?id=${data[2].id}" class="readMoreButton button4"><button class="read-more">Read more!</button></a>
+                                    `;
+
         }
     } catch (error) {
         console.log(error);
@@ -69,9 +77,14 @@ getPosts().then(() => {
     const text3 = document.querySelector(".text3");
     const text4 = document.querySelector(".text4");
 
-    const circleIndicator = document.querySelector(".circle-indicator")
+    const circleIndicator = document.querySelector(".circle-indicator");
 
-    const readMore = document.querySelector(".read-more")
+    const button1 = document.querySelector(".button1");
+    const button2 = document.querySelector(".button2");
+    const button3 = document.querySelector(".button3");
+    const button4 = document.querySelector(".button4");
+
+    
 
     
     image1.addEventListener("click", function() {
@@ -106,7 +119,11 @@ getPosts().then(() => {
                                     `;
 
         // button
-        // readMore.innerHTML = `<a href="about.html">Show more!</a>`;
+        button1.style.display = "block";
+
+        button2.style.display = "none";
+        button3.style.display = "none";
+        button4.style.display = "none";
 
     });
 
@@ -141,7 +158,11 @@ getPosts().then(() => {
                                     `;
 
         // button
-        // readMore.innerHTML = `<a href="blog-post.html?id=${data[0].id}">Show more!</a>`;
+        button2.style.display = "block";
+
+        button1.style.display = "none";
+        button3.style.display = "none";
+        button4.style.display = "none";
     });
 
     image3.addEventListener("click", function() {
@@ -173,6 +194,13 @@ getPosts().then(() => {
                                     <span class="circle circle-full"><i class="fas fa-circle"></i></span>
                                     <span class="circle circle4"><i class="far fa-circle"></i></span>
                                     `;
+
+        // Button
+        button3.style.display = "block";
+
+        button1.style.display = "none";
+        button2.style.display = "none";
+        button4.style.display = "none";
     });
 
     image4.addEventListener("click", function() {
@@ -204,6 +232,13 @@ getPosts().then(() => {
                                     <span class="circle circle4"><i class="far fa-circle"></i></span>
                                     <span class="circle circle-full"><i class="fas fa-circle"></i></span>
                                     `;
+
+        // Button
+        button4.style.display = "block";
+
+        button1.style.display = "none";
+        button2.style.display = "none";
+        button3.style.display = "none";
     });
 
 });

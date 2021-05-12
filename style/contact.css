@@ -55,4 +55,8 @@ textarea {
         margin: auto;
     }
 
+    .contact {
+        color: var(--bacground);
+    }
+
 }

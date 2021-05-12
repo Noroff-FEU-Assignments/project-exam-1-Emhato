@@ -46,7 +46,7 @@ main {
 /* text */
 
 h2 {
-    margin: 50px 20px 10px 20px;
+    margin: 50px 20px 20px 20px;
 }
 
 .latest-news {
@@ -64,6 +64,8 @@ h2 {
 
 .text {
     display: none;
+    /* height: 0;
+    opacity: 0; */
 }
 
 .text1 {
@@ -74,6 +76,13 @@ h2 {
     display: flex;
     flex-direction: column;
 }
+
+/* .text-transition {
+    height: fit-content;
+    opacity: 100%;
+    transition-duration: 2s;
+} */
+
 
 /* Circle indicator */
 
@@ -102,8 +111,20 @@ h2 {
     margin-top: 40px;
 }
 
+.readMoreButton {
+    align-self: center;
+}
+
 .read-more a {
     color: var(--bacground);
+}
+
+.readMoreButton {
+    display: none;
+}
+
+.button1 {
+    display: block;
 }
 
 /* ipad to desktop */
@@ -112,6 +133,14 @@ h2 {
         max-width: 800px;
         align-content: center;
         margin: 0 auto;
+    }
+
+    .home {
+        color: var(--bacground);
+    }
+
+    .blog {
+        color: var(--black);
     }
 }
 

@@ -43,6 +43,8 @@ main {
     flex-direction: column;
 }
 
+
+
 /* text */
 
 h2 {
@@ -84,11 +86,11 @@ h2 {
 } */
 
 
-/* Circle indicator */
+/* Circle and arrow indicator */
 
 .circle {
-    height: 20px;
-    width: 20px;
+    /* height: 20px;
+    width: 20px; */
     color: var(--orange);
 }
 
@@ -102,6 +104,27 @@ h2 {
 
 .circle-indicator {
     align-self: center;
+}
+
+.arrow {
+    color: var(--orange);
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.arrows {
+    align-self: center;
+
+}
+
+/* .fa-chevron-left {
+    height: 50px;
+    width: 50px;    
+} */
+
+.carousel-circle .arrows .arrow .fa-chevron-left{
+    height: 50px;
 }
 
 /* buttons */ 

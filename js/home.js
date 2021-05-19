@@ -84,7 +84,8 @@ getPosts().then(() => {
     const button3 = document.querySelector(".button3");
     const button4 = document.querySelector(".button4");
 
-    
+    const leftArrow = document.querySelector(".arrow-left");
+    const rightArrow = document.querySelector(".arrow-right");
 
     
     image1.addEventListener("click", function() {
@@ -240,6 +241,295 @@ getPosts().then(() => {
         button2.style.display = "none";
         button3.style.display = "none";
     });
+
+
+    //Arrow
+
+    rightArrow.addEventListener("click", function() {
+
+        if (image1.classList.contains("selected")) {
+            image1.classList.remove("selected");
+            image2.classList.add("selected");
+
+            //header
+            header2.style.display = "block";
+
+            header1.style.display = "none";
+            header3.style.display = "none";
+            header4.style.display = "none";
+
+            //text
+            text2.style.display = "block";
+
+            text1.style.display = "none";
+            text3.style.display = "none";
+            text4.style.display = "none";
+
+            //circle indicator
+            circleIndicator.innerHTML = `
+                                        <span class="circle circle2"><i class="far fa-circle"></i></span>
+                                        <span class="circle circle-full"><i class="fas fa-circle"></i></span>
+                                        <span class="circle circle3"><i class="far fa-circle"></i></span>
+                                        <span class="circle circle4"><i class="far fa-circle"></i></span>
+                                        `;
+
+            // button
+            button2.style.display = "block";
+
+            button1.style.display = "none";
+            button3.style.display = "none";
+            button4.style.display = "none";
+
+        }
+
+        else if (image2.classList.contains("selected")) {
+            image2.classList.remove("selected");
+            image3.classList.add("selected");
+
+            //header
+            header3.style.display = "block";
+
+            header1.style.display = "none";
+            header2.style.display = "none";
+            header4.style.display = "none";
+
+            //text
+            text3.style.display = "block";
+
+            text1.style.display = "none";
+            text2.style.display = "none";
+            text4.style.display = "none";
+
+            // circle indicator
+            circleIndicator.innerHTML = `
+                                        <span class="circle circle2"><i class="far fa-circle"></i></span>
+                                        <span class="circle circle3"><i class="far fa-circle"></i></span>
+                                        <span class="circle circle-full"><i class="fas fa-circle"></i></span>
+                                        <span class="circle circle4"><i class="far fa-circle"></i></span>
+                                        `;
+
+            // Button
+            button3.style.display = "block";
+
+            button1.style.display = "none";
+            button2.style.display = "none";
+            button4.style.display = "none";
+        }
+
+        else if (image3.classList.contains("selected")) {
+            image3.classList.remove("selected");
+            image4.classList.add("selected");
+
+            //header
+            header4.style.display = "block";
+
+            header1.style.display = "none";
+            header2.style.display = "none";
+            header3.style.display = "none";
+
+            //text
+            text4.style.display = "block";
+
+            text1.style.display = "none";
+            text2.style.display = "none";
+            text3.style.display = "none";
+
+            //circle indicator
+            circleIndicator.innerHTML = `
+                                        <span class="circle circle2"><i class="far fa-circle"></i></span>
+                                        <span class="circle circle3"><i class="far fa-circle"></i></span>
+                                        <span class="circle circle4"><i class="far fa-circle"></i></span>
+                                        <span class="circle circle-full"><i class="fas fa-circle"></i></span>
+                                        `;
+
+            // Button
+            button4.style.display = "block";
+
+            button1.style.display = "none";
+            button2.style.display = "none";
+            button3.style.display = "none";
+        }
+
+        else if (image4.classList.contains("selected")) {
+            image4.classList.remove("selected");
+            image1.classList.add("selected");
+
+            //header
+            header1.style.display = "block";
+
+            header2.style.display = "none";
+            header3.style.display = "none";
+            header4.style.display = "none";
+
+            //text
+            text1.style.display = "block";
+
+            text2.style.display = "none";
+            text3.style.display = "none";
+            text4.style.display = "none";
+
+
+
+            //circle indicator
+            circleIndicator.innerHTML = `<span class="circle circle-full"><i class="fas fa-circle"></i></span>
+                                        <span class="circle circle2"><i class="far fa-circle"></i></span>
+                                        <span class="circle circle3"><i class="far fa-circle"></i></span>
+                                        <span class="circle circle4"><i class="far fa-circle"></i></span>
+                                        `;
+
+            // button
+            button1.style.display = "block";
+
+            button2.style.display = "none";
+            button3.style.display = "none";
+            button4.style.display = "none";
+        }
+
+    });
+
+    leftArrow.addEventListener("click", function() {
+
+        if (image1.classList.contains("selected")) {
+            image1.classList.remove("selected");
+            image4.classList.add("selected");
+
+            //header
+            header4.style.display = "block";
+
+            header1.style.display = "none";
+            header2.style.display = "none";
+            header3.style.display = "none";
+
+            //text
+            text4.style.display = "block";
+
+            text1.style.display = "none";
+            text2.style.display = "none";
+            text3.style.display = "none";
+
+            //circle indicator
+            circleIndicator.innerHTML = `
+                                        <span class="circle circle2"><i class="far fa-circle"></i></span>
+                                        <span class="circle circle3"><i class="far fa-circle"></i></span>
+                                        <span class="circle circle4"><i class="far fa-circle"></i></span>
+                                        <span class="circle circle-full"><i class="fas fa-circle"></i></span>
+                                        `;
+
+            // Button
+            button4.style.display = "block";
+
+            button1.style.display = "none";
+            button2.style.display = "none";
+            button3.style.display = "none";
+
+        }
+
+        else if (image2.classList.contains("selected")) {
+            image2.classList.remove("selected");
+            image1.classList.add("selected");
+
+            //header
+            header1.style.display = "block";
+
+            header2.style.display = "none";
+            header3.style.display = "none";
+            header4.style.display = "none";
+
+            //text
+            text1.style.display = "block";
+
+            text2.style.display = "none";
+            text3.style.display = "none";
+            text4.style.display = "none";
+
+
+
+            //circle indicator
+            circleIndicator.innerHTML = `<span class="circle circle-full"><i class="fas fa-circle"></i></span>
+                                        <span class="circle circle2"><i class="far fa-circle"></i></span>
+                                        <span class="circle circle3"><i class="far fa-circle"></i></span>
+                                        <span class="circle circle4"><i class="far fa-circle"></i></span>
+                                        `;
+
+            // button
+            button1.style.display = "block";
+
+            button2.style.display = "none";
+            button3.style.display = "none";
+            button4.style.display = "none";
+        }
+
+        else if (image3.classList.contains("selected")) {
+            image3.classList.remove("selected");
+            image2.classList.add("selected");
+
+            //header
+            header2.style.display = "block";
+
+            header1.style.display = "none";
+            header3.style.display = "none";
+            header4.style.display = "none";
+
+            //text
+            text2.style.display = "block";
+
+            text1.style.display = "none";
+            text3.style.display = "none";
+            text4.style.display = "none";
+
+            //circle indicator
+            circleIndicator.innerHTML = `
+                                        <span class="circle circle2"><i class="far fa-circle"></i></span>
+                                        <span class="circle circle-full"><i class="fas fa-circle"></i></span>
+                                        <span class="circle circle3"><i class="far fa-circle"></i></span>
+                                        <span class="circle circle4"><i class="far fa-circle"></i></span>
+                                        `;
+
+            // button
+            button2.style.display = "block";
+
+            button1.style.display = "none";
+            button3.style.display = "none";
+            button4.style.display = "none";
+        }
+
+        else if (image4.classList.contains("selected")) {
+            image4.classList.remove("selected");
+            image3.classList.add("selected");
+
+            //header
+            header3.style.display = "block";
+
+            header1.style.display = "none";
+            header2.style.display = "none";
+            header4.style.display = "none";
+
+            //text
+            text3.style.display = "block";
+
+            text1.style.display = "none";
+            text2.style.display = "none";
+            text4.style.display = "none";
+
+            // circle indicator
+            circleIndicator.innerHTML = `
+                                        <span class="circle circle2"><i class="far fa-circle"></i></span>
+                                        <span class="circle circle3"><i class="far fa-circle"></i></span>
+                                        <span class="circle circle-full"><i class="fas fa-circle"></i></span>
+                                        <span class="circle circle4"><i class="far fa-circle"></i></span>
+                                        `;
+
+            // Button
+            button3.style.display = "block";
+
+            button1.style.display = "none";
+            button2.style.display = "none";
+            button4.style.display = "none";
+        }
+
+    });
+
+
 
 });
 

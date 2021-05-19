@@ -60,7 +60,10 @@ function lengthCheck(value, len) {
 
 function messageValidation() {
     if ((lengthCheck(fullName.value, 5) === true) && (lengthCheck(subject.value, 15) === true) && (lengthCheck(message.value, 25) === true) && (emailValidation(email.value) === true)) {
-        validationMessage.innerHTML = "The form has been properly filled out and is ready to be submitted when you are";
+        validationMessage.innerHTML = "The form has been properly filled out and is ready to be submitted when you are!";
+        button.addEventListener("click", function() {
+            validationMessage.innerHTML = "Thank you for your message! We'll get back to you soon."
+        });
     } else {
         validationMessage.innerHTML = "";
     }

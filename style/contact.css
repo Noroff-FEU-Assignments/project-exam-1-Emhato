@@ -43,6 +43,10 @@ textarea {
     padding-bottom: 0;
 }
 
+.message {
+    margin-top: 20px;
+}
+
 /* above ipad */
 
 @media only screen and (min-width: 770px) {

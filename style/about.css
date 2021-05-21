@@ -27,13 +27,6 @@ h3 {
     margin-left: 0;
 }
 
-/*Header*/
-
-/* h2 {
-    margin-top: 30px;
-    margin-left: 20px;
-} */
-
 /* above ipad */
 
 @media only screen and (min-width: 770px) {
@@ -54,6 +47,7 @@ h3 {
     }
 
     .about {
-        color: var(--bacground);
+        background: rgb(255,254,252);
+        background: linear-gradient(0deg, rgba(255,254,252,1) 0%, rgba(254,230,204,1) 100%);
     }
 }

@@ -2,32 +2,24 @@
 
 .post-image {
     height: 250px;
-    /* width: 375px; */
     background-size: cover;
     background-position: bottom;
     cursor: pointer;
 }
 
 
-
-/* header */
-
-/* h2 {
-    margin-top: 30px;
-    margin-left: 20px;
-} */
-
 /*Links*/
 
 a {
     color: var(--orange);
+    /* font-weight: 700; */
+    /* color: #BF4904; */
 }
 
 /* focused image */
 
 .background {
     background-color: rgba(6,12,10, 1);
-    /* filter: blur(2px); */
 }
 
 .highlight-image {
@@ -60,7 +52,8 @@ a {
     }
 
     .blog {
-        color: var(--bacground);
+        background: rgb(255,254,252);
+        background: linear-gradient(0deg, rgba(255,254,252,1) 0%, rgba(254,230,204,1) 100%);
     }
 
 }

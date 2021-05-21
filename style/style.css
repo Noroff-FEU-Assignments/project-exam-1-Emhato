@@ -5,12 +5,10 @@
   }
 
 :root {
-    --orange: #FC8200;
+    --orange: #BF4904;
     --bacground: #FFFEFC;
     --black: #060C0A;
-    --lightorange: #FEE6CC;
-    /* --height: 1.4rem;
-    line-height: var(--height); */
+    --lightorange: #FFF6E5;
 }
 
 body {
@@ -31,11 +29,6 @@ h1 {
     color: var(--black);
     margin: 20px auto;
 }
-
-/* h2 {
-    margin: 40px 20px 20px 20px;
-    margin: auto;
-} */
 
 h2 {
     margin-top: 30px;
@@ -136,7 +129,8 @@ li a {
 }
 
 .top-nav-mobile {
-    background-image: url(/images/sunrise.jpg);
+    background: rgb(254,189,58);
+    background: linear-gradient(90deg, rgba(255,174,1,1) 0%, rgba(255,207,73,1) 60%, rgba(252,130,0,1) 100%);
     display: flex;
     background-position: center top 12%;
     background-repeat: no-repeat;
@@ -200,7 +194,7 @@ li a {
         background: rgb(254,189,58);
         background: linear-gradient(90deg, rgba(255,174,1,1) 0%, rgba(255,207,73,1) 60%, rgba(252,130,0,1) 100%);
         background-repeat: no-repeat;
-        height: 80px;
+        height: 55px;
         background-position: center top 12%;
         background-size: 100%;
     }
@@ -215,6 +209,7 @@ li a {
     li a {
         border-bottom: none;
         font-size: 1.5rem;
+        padding: 25px 10px 5px 10px;
     }
 
     .list-top {
@@ -224,7 +219,8 @@ li a {
 
 
     li a:hover {
-        color: var(--bacground);
+        background: rgb(255,254,252);
+        background: linear-gradient(0deg, rgba(255,254,252,1) 0%, rgba(254,230,204,1) 100%);
     }
     
     /* bottom nav */

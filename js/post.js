@@ -12,6 +12,7 @@ console.log(url)
 
 const post = document.querySelector(".post");
 const title = document.querySelector("title");
+const metaDescription = document.querySelector(".blog-description")
 
 
 async function getDetails() {
@@ -24,18 +25,16 @@ async function getDetails() {
 
         post.innerHTML = "";
 
-        // for (let i = 0; i < data.length; i++) {
+        title.innerHTML = `${data.title.rendered}`;
+        metaDescription.innerHTML = `name="description" content="This is the content page of the hopeful news. Here you can read the article: ${data.title.rendered}"`
 
-            title.innerHTML = `${data.title.rendered}`;
-
-            post.innerHTML = `<div class="results">
-                                <h2 class="remove1">${data.title.rendered}</h2>
-                                <div class="post-image"
-                                    style="background-image: url('${data.better_featured_image.source_url}')" alt="${data.title.rendered}"></div>
-                                <p class="remove2">${data.content.rendered}</p>
-                            </div>`;
+        post.innerHTML = `<div class="results">
+                            <h2 class="remove1">${data.title.rendered}</h2>
+                            <div tabindex="0" role="button" aria-label="enlarge" class="post-image"
+                                style="background-image: url('${data.better_featured_image.source_url}')" alt="${data.title.rendered}"></div>
+                            <p class="remove2">${data.content.rendered}</p>
+                        </div>`;
         
-        // }
 
     } catch (error) {
         console.log(error);
@@ -61,17 +60,6 @@ getDetails().then(() => {
         main.style.maxWidth = "1000px";
     })
 
-    // body.addEventListener("click", function() {
-    //     if (body !== image) {
-    //         body.classList.remove("background");
-    //     }
-    // })
-
-    // remove2.addEventListener("click", function() {
-
-    //     body.classList.remove("background");
-    // })
-
     document.addEventListener("click", function(event) {
         if (!event.target.closest(".post-image")) {
             body.classList.remove("background");
@@ -80,13 +68,30 @@ getDetails().then(() => {
             image.style.cursor = "pointer";
             main.style.maxWidth = "800px";
         }
-
-
     })
 
+    function imageKey() {
+        body.classList.add("background");
+        image.classList.add("enlarged-image");
+        body.style.cursor = "pointer";
+        image.style.cursor = "default";
+        main.style.maxWidth = "1000px";
+    }
+
+    function bodyKey() {
+        if (!event.target.closest(".post-image")) {
+            body.classList.remove("background");
+            image.classList.remove("enlarged-image");
+            body.style.cursor = "default";
+            image.style.cursor = "pointer";
+            main.style.maxWidth = "800px";
+        }
+    }
+
+    image.onkeydown = imageKey;
+
+    body.onkeydown = bodyKey;
+
+
 });
-
-
-// Resource
-// https://techstacker.com/close-modal-click-outside-vanilla-javascript/
 

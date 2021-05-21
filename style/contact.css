@@ -1,20 +1,14 @@
-/*Header*/
-
-/* h2 {
-    margin-left: 20px;
-} */
-
 /* Form*/
 
 #form {
-    background-color: var(--lightorange);
+    /* background-color: var(--lightorange); */
+    background: rgb(255,254,252);
+    background: linear-gradient(0deg, rgba(255,254,252,1) 0%, rgba(254,230,204,1) 100%);
     border-radius: 0 30px;
     margin: 0 20px 0 20px;
     display: flex;
     flex-direction: column;
     padding: 20px;
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
 .form-error {
@@ -60,7 +54,8 @@ textarea {
     }
 
     .contact {
-        color: var(--bacground);
+        background: rgb(255,254,252);
+        background: linear-gradient(0deg, rgba(255,254,252,1) 0%, rgba(254,230,204,1) 100%);
     }
 
 }

@@ -30,10 +30,10 @@ async function getPosts() {
                                 `;
 
             images.innerHTML += `<section class="carousel-section">
-                                    <figure id="image1" class="carousel-image image1 selected" style="background-image: url('images/sunrise.jpg')" alt="Sunrise"></figure>
-                                    <figure class="carousel-image image2" style="background-image: url('${data[0].better_featured_image.source_url}')" alt="${data[0].title.rendered}"></figure>
-                                    <figure class="carousel-image image3" style="background-image: url('${data[1].better_featured_image.source_url}')" ${data[1].title.rendered}></figure>
-                                    <figure class="carousel-image image4" style="background-image: url('${data[2].better_featured_image.source_url}')" ${data[2].title.rendered}></figure>
+                                    <figure tabindex="0" role="button" aria-label="about" id="image1" class="carousel-image image1 selected" style="background-image: url('images/sunrise.jpg')" alt="Sunrise"></figure>
+                                    <figure tabindex="0" role="button" aria-label="next-story" class="carousel-image image2" style="background-image: url('${data[0].better_featured_image.source_url}')" alt="${data[0].title.rendered}"></figure>
+                                    <figure tabindex="0" role="button" aria-label="next-story" class="carousel-image image3" style="background-image: url('${data[1].better_featured_image.source_url}')" ${data[1].title.rendered}></figure>
+                                    <figure tabindex="0" role="button" aria-label="next-story" class="carousel-image image4" style="background-image: url('${data[2].better_featured_image.source_url}')" ${data[2].title.rendered}></figure>
                                 </section>
                                     `;
             
@@ -57,8 +57,6 @@ async function getPosts() {
     }
 
 }
-
-/* <button class="read-more">Read more!<a href="blog-post.html?id=${data[i].id}" class="result"></a></button> */
 
 
 getPosts().then(() => {
@@ -87,48 +85,54 @@ getPosts().then(() => {
     const leftArrow = document.querySelector(".arrow-left");
     const rightArrow = document.querySelector(".arrow-right");
 
-    
-    image1.addEventListener("click", function() {
+
+    image1.addEventListener("click", image1Key);
+    image1.onkeydown = image1Key;
+
+
+    function image1Key() {
         //Image
         image2.classList.remove("selected");
         image3.classList.remove("selected");
         image4.classList.remove("selected");
-
+        
         image1.classList.add("selected");
-
+        
         //header
         header1.style.display = "block";
-
+        
         header2.style.display = "none";
         header3.style.display = "none";
         header4.style.display = "none";
-
+        
         //text
         text1.style.display = "block";
-
+        
         text2.style.display = "none";
         text3.style.display = "none";
         text4.style.display = "none";
-
-
-
+        
+        
+        
         //circle indicator
         circleIndicator.innerHTML = `<span class="circle circle-full"><i class="fas fa-circle"></i></span>
                                     <span class="circle circle2"><i class="far fa-circle"></i></span>
                                     <span class="circle circle3"><i class="far fa-circle"></i></span>
                                     <span class="circle circle4"><i class="far fa-circle"></i></span>
                                     `;
-
+        
         // button
         button1.style.display = "block";
-
+        
         button2.style.display = "none";
         button3.style.display = "none";
         button4.style.display = "none";
+    }
 
-    });
+    image2.addEventListener("click", image2Key);
+    image2.onkeydown = image2Key;
 
-    image2.addEventListener("click", function() {
+    function image2Key() {
         //image
         image1.classList.remove("selected");
         image3.classList.remove("selected");
@@ -164,9 +168,12 @@ getPosts().then(() => {
         button1.style.display = "none";
         button3.style.display = "none";
         button4.style.display = "none";
-    });
+    }
 
-    image3.addEventListener("click", function() {
+    image3.addEventListener("click", image3Key);
+    image3.onkeydown = image3Key;
+
+    function image3Key() {
         //image
         image1.classList.remove("selected");
         image2.classList.remove("selected");
@@ -202,9 +209,12 @@ getPosts().then(() => {
         button1.style.display = "none";
         button2.style.display = "none";
         button4.style.display = "none";
-    });
+    }
 
-    image4.addEventListener("click", function() {
+    image4.addEventListener("click", image4Key);
+    image4.onkeydown = image4Key;
+
+    function image4Key() {
         //image
         image1.classList.remove("selected");
         image2.classList.remove("selected");
@@ -240,12 +250,15 @@ getPosts().then(() => {
         button1.style.display = "none";
         button2.style.display = "none";
         button3.style.display = "none";
-    });
+    };
 
 
     //Arrow
 
-    rightArrow.addEventListener("click", function() {
+    rightArrow.addEventListener("click", rightArrowKey);
+    rightArrow.onkeydown = rightArrowKey;
+
+    function rightArrowKey() {
 
         if (image1.classList.contains("selected")) {
             image1.classList.remove("selected");
@@ -385,9 +398,12 @@ getPosts().then(() => {
             button4.style.display = "none";
         }
 
-    });
+    };
 
-    leftArrow.addEventListener("click", function() {
+    leftArrow.addEventListener("click", leftArrowKey);
+    leftArrow.onkeydown = leftArrowKey;
+
+    function leftArrowKey() {
 
         if (image1.classList.contains("selected")) {
             image1.classList.remove("selected");
@@ -527,37 +543,6 @@ getPosts().then(() => {
             button4.style.display = "none";
         }
 
-    });
-
-
+    };
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-// images.innerHTML += `<section class="carousel-section">
-// <figure id="image1" class="carousel-image image1" style="background-image: url('images/sunrise.jpg')"></figure>
-// <figure class="carousel-image image2 selected" style="background-image: url('${data[0].better_featured_image.source_url}')"></figure>
-// <figure class="carousel-image image3" style="background-image: url('${data[1].better_featured_image.source_url}')"></figure>
-// <figure class="carousel-image image4" style="background-image: url('${data[2].better_featured_image.source_url}')"></figure>
-// </section>
-
-
-
-
-
-// <a href="blog-post.html?id=${data[i].id}" class="result">
-//                                         <div class="wrap">
-// <h2>${data[i].title.rendered}</h2>
-// <p>${data[i].content.rendered}</p>                                            
-// </div>
-// </a>

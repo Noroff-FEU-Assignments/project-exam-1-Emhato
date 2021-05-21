@@ -8,8 +8,6 @@ main {
 /* Carousel image*/
 
 .carousel-image {
-    /* width: 375px;
-    height: 250px; */
     width: 488px;
     height: 325px;
     background-size: cover;
@@ -17,11 +15,9 @@ main {
     flex: 1;
     opacity: 30%;
     cursor: pointer;
-    /* filter: blur(0.5px); */
 }
 
 .carousel-section {
-    /* margin-top: 40px; */
     margin-bottom: 40px;
     margin-left: 20px;
     margin-right: 20px;
@@ -31,7 +27,6 @@ main {
 .selected {
     flex: 6;
     opacity: 100%;
-    /* filter: blur(0px); */
 }
 
 .something {
@@ -51,9 +46,17 @@ h2 {
     margin: 50px 20px 20px 20px;
 }
 
-.latest-news {
+/* .latest-news {
     margin: 60px 20px 0px 20px;
     font-size: 2rem;
+} */
+
+.latest-news {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    margin-left: 0;
 }
 
 .header {
@@ -66,8 +69,6 @@ h2 {
 
 .text {
     display: none;
-    /* height: 0;
-    opacity: 0; */
 }
 
 .text1 {
@@ -79,38 +80,18 @@ h2 {
     flex-direction: column;
 }
 
-/* .text-transition {
-    height: fit-content;
-    opacity: 100%;
-    transition-duration: 2s;
-} */
 
-
-/* Circle and arrow indicator */
-
-.circle {
-    /* height: 20px;
-    width: 20px; */
-    color: var(--orange);
-}
-
-.circle1 {
-    display: none;
-}
-
-.circle2-2, .circle3-3, .circle4-4 {
-    display: none;
-}
-
-.circle-indicator {
-    align-self: center;
-}
+/*arrow indicator */
 
 .arrow {
     color: var(--orange);
     padding-left: 10px;
     padding-right: 10px;
+    cursor: pointer;
+}
 
+.arrow:hover {
+    color: #FC8200;
 }
 
 .arrows {
@@ -118,10 +99,6 @@ h2 {
 
 }
 
-/* .fa-chevron-left {
-    height: 50px;
-    width: 50px;    
-} */
 
 .carousel-circle .arrows .arrow .fa-chevron-left{
     height: 50px;
@@ -159,42 +136,22 @@ h2 {
     }
 
     .home {
-        color: var(--bacground);
+        background: rgb(255,254,252);
+        background: linear-gradient(0deg, rgba(255,254,252,1) 0%, rgba(254,230,204,1) 100%);
     }
 
     .blog {
-        color: var(--black);
+        background: none;
     }
 }
 
 /* desktop */
 
 @media only screen and (min-width: 1200px) {
-    /* .desktop-grid {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-template-rows: max-content;
-        grid-template-areas: 
-                        'carousel header'
-                        'carousel paragraph';
-    }
 
-    .header {
-        grid-area: header;
-    }
-
-    .carousel-circle {
-        grid-area: carousel;
-    }
-
-    .text {
-        grid-area: paragraph;
-    } */
 
     main {
         max-width: none;
-        /* align-content: center;
-        margin: 0 auto; */
     }
 
     .carousel-image {
@@ -206,25 +163,13 @@ h2 {
         max-width: 800px;
     }
 
-    /* main {
-        max-width: 800px;
-        align-content: center;
-        margin: 0 auto;
-    } */
-
     .desktop-flex {
         display: flex;
     }
 
-    /* .carousel-text {
-        display: flex;
-        flex-direction: column;
-    } */
-
 
     .selected {
         flex: 10;
-        /* filter: blur(0px); */
     }
 
 }

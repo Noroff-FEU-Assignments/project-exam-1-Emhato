@@ -544,7 +544,5 @@ getPosts().then(() => {
             button2.style.display = "none";
             button4.style.display = "none";
         }
-
     };
-
 });

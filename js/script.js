@@ -2,7 +2,7 @@
 
 const hamburger = document.querySelector(".fa-bars");
 const cross = document.querySelector(".fa-times");
-const navigation = document.querySelector("nav")
+const navigation = document.querySelector("nav");
 const navBareMobile = document.querySelector(".top-nav-mobile");
 
 
@@ -20,7 +20,7 @@ function crossClicked() {
     navigation.style.display = "none";
     hamburger.style.display = "block";
     cross.style.display = "none";
-    navBareMobile.style.backgroundImage = "url(/images/sunrise.jpg)"
+    navBareMobile.style.backgroundImage = "url(/images/sunrise.jpg)";
 }
 
 cross.addEventListener("click", crossClicked);

@@ -8,11 +8,11 @@ const idParam = params.get("id");
 
 const url = "https://www.emmatonnessen.com/wp-json/wp/v2/posts/" + idParam;
 
-console.log(url)
+console.log(url);
 
 const post = document.querySelector(".post");
 const title = document.querySelector("title");
-const metaDescription = document.querySelector(".blog-description")
+const metaDescription = document.querySelector(".blog-description");
 
 
 async function getDetails() {
@@ -26,7 +26,7 @@ async function getDetails() {
         post.innerHTML = "";
 
         title.innerHTML = `${data.title.rendered}`;
-        metaDescription.innerHTML = `name="description" content="This is the content page of the hopeful news. Here you can read the article: ${data.title.rendered}"`
+        metaDescription.innerHTML = `name="description" content="This is the content page of the hopeful news. Here you can read the article: ${data.title.rendered}"`;
 
         post.innerHTML = `<div class="results">
                             <h2 class="remove1">${data.title.rendered}</h2>
@@ -49,7 +49,7 @@ async function getDetails() {
 getDetails().then(() => {
     const body = document.querySelector("body");
     const image = document.querySelector(".post-image");
-    const main = document.querySelector("main")
+    const main = document.querySelector("main");
 
 
     image.addEventListener("click", function() {
@@ -91,7 +91,5 @@ getDetails().then(() => {
     image.onkeydown = imageKey;
 
     body.onkeydown = bodyKey;
-
-
 });
 

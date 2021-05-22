@@ -8,9 +8,9 @@ const emailError = document.querySelector("#emailError");
 const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subjectError");
 const message = document.querySelector("#message");
-const messageError = document.querySelector("#messageError")
+const messageError = document.querySelector("#messageError");
 const button = document.querySelector("button");
-const validationMessage = document.querySelector(".message")
+const validationMessage = document.querySelector(".message");
 
 function formValidation(event) {
     event.preventDefault();
@@ -62,7 +62,7 @@ function messageValidation() {
     if ((lengthCheck(fullName.value, 5) === true) && (lengthCheck(subject.value, 15) === true) && (lengthCheck(message.value, 25) === true) && (emailValidation(email.value) === true)) {
         validationMessage.innerHTML = "The form has been properly filled out and is ready to be submitted when you are!";
         button.addEventListener("click", function() {
-            validationMessage.innerHTML = "Thank you for your message! We'll get back to you soon."
+            validationMessage.innerHTML = "Thank you for your message! We'll get back to you soon.";
         });
     } else {
         validationMessage.innerHTML = "";

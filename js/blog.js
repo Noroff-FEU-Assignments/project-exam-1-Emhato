@@ -61,7 +61,7 @@ const loadMore =  async () => {
 
         console.log(url2);
         
-        console.log(data)
+        console.log(data);
 
         if (page + 1 === 3) {
             showMore.style.display = "none";
@@ -90,6 +90,6 @@ const loadMore =  async () => {
 
 }
 
-showMore.addEventListener("click", loadMore)
+showMore.addEventListener("click", loadMore);
 
 

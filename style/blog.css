@@ -20,11 +20,6 @@ html {
     border-radius: 0px 20px;
 }
 
-.show-more {
-    width: fit-content;
-    align-self: center;
-}
-
 .card p {
     max-height: calc(var(--height) * 6);
     overflow: hidden;
@@ -55,13 +50,8 @@ html {
 
     h2 {
         text-align: center;
-        /* margin-top: 200px; */
         margin-bottom: 30px;
         font-size: 2rem;
-    }
-
-    .show-more {
-        margin: 30px 20px;
     }
 
     .blog {

@@ -22,7 +22,7 @@ p {
     font-family: 'montserrat', sans-serif;
     font-size: 1rem;
     line-height: 28px;
-    margin: 20px 20px 20px 20px;
+    margin: 20px;
 }
 
 h1 {
@@ -77,10 +77,13 @@ button {
     font-weight: 700;
     font-size: 2rem;
     height: 65px;
+    cursor: pointer;
+    margin: 30px 20px;
+    width: fit-content;
+    align-self: center;
 }
 
 button:hover {
-    /* background-color: var(--orange); */
     background: rgb(254,189,58);
     background: linear-gradient(90deg, rgba(255,174,1,1) 0%, rgba(255,207,73,1) 60%, rgba(252,130,0,1) 100%);
 }
@@ -112,7 +115,6 @@ li {
 }
   
 li a {
-    text-decoration: none;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--white);
@@ -218,7 +220,7 @@ li a {
     }
 
 
-    li a:hover {
+    .home:hover, .about:hover, .blog:hover, .contact:hover {
         background: rgb(255,254,252);
         background: linear-gradient(0deg, rgba(255,254,252,1) 0%, rgba(254,230,204,1) 100%);
     }

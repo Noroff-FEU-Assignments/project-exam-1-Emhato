@@ -1,7 +1,6 @@
 /* Form*/
 
 #form {
-    /* background-color: var(--lightorange); */
     background: rgb(255,254,252);
     background: linear-gradient(0deg, rgba(255,254,252,1) 0%, rgba(254,230,204,1) 100%);
     border-radius: 0 30px;
@@ -27,14 +26,6 @@ textarea {
     height: 200px;
     border-color: var(--orange);
     border-width: 2px;
-}
-
-.send {
-    width: fit-content;
-    align-self: center;
-    margin-top: 30px;
-    padding-top: 0px;
-    padding-bottom: 0;
 }
 
 .message {

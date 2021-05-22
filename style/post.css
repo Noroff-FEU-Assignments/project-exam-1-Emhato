@@ -12,8 +12,6 @@
 
 a {
     color: var(--orange);
-    /* font-weight: 700; */
-    /* color: #BF4904; */
 }
 
 /* focused image */
@@ -39,10 +37,6 @@ a {
         margin-left: 20px;
         margin-right: 20px;
         height: 533px;
-    }
-
-    h2 {
-        margin-left: 20px;
     }
 
     .enlarged-image {

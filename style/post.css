@@ -20,10 +20,6 @@ a {
     background-color: rgba(6,12,10, 1);
 }
 
-.highlight-image {
-    filter: blur(0px);
-}
-
 /* above ipad */
 
 @media only screen and (min-width: 770px) {
@@ -49,6 +45,5 @@ a {
         background: rgb(255,254,252);
         background: linear-gradient(0deg, rgba(255,254,252,1) 0%, rgba(254,230,204,1) 100%);
     }
-
 }
 

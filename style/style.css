@@ -88,12 +88,6 @@ button:hover {
     background: linear-gradient(90deg, rgba(255,174,1,1) 0%, rgba(255,207,73,1) 60%, rgba(252,130,0,1) 100%);
 }
 
-/* Images*/
-
-.image {
-    height: 200px;
-}
-
 /*Mobile top nav*/
 
 .fa-times {
@@ -122,7 +116,6 @@ li a {
     border-bottom: solid 1px;
 }
   
-  
 .fa-bars, .fa-times {
     color: var(--black);
     padding-right: 20px;
@@ -139,8 +132,6 @@ li a {
     align-items: center;
     height: 80px;
 }
-
-
 
 /* Mobile bottom nav */
 
@@ -238,5 +229,4 @@ li a {
     .name-bottom {
         font-size: 2rem;
     }
-
 }

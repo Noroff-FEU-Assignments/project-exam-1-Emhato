@@ -27,6 +27,7 @@ main {
 .selected {
     flex: 6;
     opacity: 100%;
+    transition: flex 1s;
 }
 
 .something {
@@ -68,7 +69,6 @@ h2 {
 }
 
 .fade {
-
     opacity: 100%;
     transition: opacity 1.5s;
 }
@@ -144,7 +144,6 @@ h2 {
 
 @media only screen and (min-width: 1200px) {
 
-
     main {
         max-width: none;
     }
@@ -166,5 +165,4 @@ h2 {
     .selected {
         flex: 10;
     }
-
 }

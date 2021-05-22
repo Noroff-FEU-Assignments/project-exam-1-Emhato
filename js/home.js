@@ -106,11 +106,11 @@ getPosts().then(() => {
         header4.style.display = "none";
         
         //text
-        text1.style.display = "block";
-        
-        text2.style.display = "none";
-        text3.style.display = "none";
-        text4.style.display = "none";
+        text1.classList.add("fade");
+
+        text2.classList.remove("fade");
+        text3.classList.remove("fade");
+        text4.classList.remove("fade");
         
         
         
@@ -148,11 +148,12 @@ getPosts().then(() => {
         header4.style.display = "none";
 
         //text
-        text2.style.display = "block";
+        text2.classList.add("fade");
 
-        text1.style.display = "none";
-        text3.style.display = "none";
-        text4.style.display = "none";
+        text1.classList.remove("fade");
+        text3.classList.remove("fade");
+        text4.classList.remove("fade");
+
 
         //circle indicator
         circleIndicator.innerHTML = `
@@ -189,11 +190,11 @@ getPosts().then(() => {
         header4.style.display = "none";
 
         //text
-        text3.style.display = "block";
+        text3.classList.add("fade");
 
-        text1.style.display = "none";
-        text2.style.display = "none";
-        text4.style.display = "none";
+        text1.classList.remove("fade");
+        text2.classList.remove("fade");
+        text4.classList.remove("fade");
 
         // circle indicator
         circleIndicator.innerHTML = `
@@ -230,11 +231,11 @@ getPosts().then(() => {
         header3.style.display = "none";
 
         //text
-        text4.style.display = "block";
+        text4.classList.add("fade");
 
-        text1.style.display = "none";
-        text2.style.display = "none";
-        text3.style.display = "none";
+        text1.classList.remove("fade");
+        text3.classList.remove("fade");
+        text2.classList.remove("fade");
 
         //circle indicator
         circleIndicator.innerHTML = `
@@ -272,11 +273,11 @@ getPosts().then(() => {
             header4.style.display = "none";
 
             //text
-            text2.style.display = "block";
+            text2.classList.add("fade");
 
-            text1.style.display = "none";
-            text3.style.display = "none";
-            text4.style.display = "none";
+            text1.classList.remove("fade");
+            text3.classList.remove("fade");
+            text4.classList.remove("fade");
 
             //circle indicator
             circleIndicator.innerHTML = `
@@ -307,11 +308,11 @@ getPosts().then(() => {
             header4.style.display = "none";
 
             //text
-            text3.style.display = "block";
+            text3.classList.add("fade");
 
-            text1.style.display = "none";
-            text2.style.display = "none";
-            text4.style.display = "none";
+            text1.classList.remove("fade");
+            text2.classList.remove("fade");
+            text4.classList.remove("fade");
 
             // circle indicator
             circleIndicator.innerHTML = `
@@ -341,11 +342,11 @@ getPosts().then(() => {
             header3.style.display = "none";
 
             //text
-            text4.style.display = "block";
+            text4.classList.add("fade");
 
-            text1.style.display = "none";
-            text2.style.display = "none";
-            text3.style.display = "none";
+            text1.classList.remove("fade");
+            text3.classList.remove("fade");
+            text2.classList.remove("fade");
 
             //circle indicator
             circleIndicator.innerHTML = `
@@ -375,11 +376,11 @@ getPosts().then(() => {
             header4.style.display = "none";
 
             //text
-            text1.style.display = "block";
+            text1.classList.add("fade");
 
-            text2.style.display = "none";
-            text3.style.display = "none";
-            text4.style.display = "none";
+            text2.classList.remove("fade");
+            text3.classList.remove("fade");
+            text4.classList.remove("fade");
 
 
 
@@ -417,11 +418,12 @@ getPosts().then(() => {
             header3.style.display = "none";
 
             //text
-            text4.style.display = "block";
+            text4.classList.add("fade");
 
-            text1.style.display = "none";
-            text2.style.display = "none";
-            text3.style.display = "none";
+            text1.classList.remove("fade");
+            text3.classList.remove("fade");
+            text2.classList.remove("fade");
+
 
             //circle indicator
             circleIndicator.innerHTML = `
@@ -452,11 +454,11 @@ getPosts().then(() => {
             header4.style.display = "none";
 
             //text
-            text1.style.display = "block";
+            text1.classList.add("fade");
 
-            text2.style.display = "none";
-            text3.style.display = "none";
-            text4.style.display = "none";
+            text2.classList.remove("fade");
+            text3.classList.remove("fade");
+            text4.classList.remove("fade");
 
 
 
@@ -487,11 +489,11 @@ getPosts().then(() => {
             header4.style.display = "none";
 
             //text
-            text2.style.display = "block";
+            text2.classList.add("fade");
 
-            text1.style.display = "none";
-            text3.style.display = "none";
-            text4.style.display = "none";
+            text1.classList.remove("fade");
+            text3.classList.remove("fade");
+            text4.classList.remove("fade");
 
             //circle indicator
             circleIndicator.innerHTML = `
@@ -521,11 +523,11 @@ getPosts().then(() => {
             header4.style.display = "none";
 
             //text
-            text3.style.display = "block";
+            text3.classList.add("fade");
 
-            text1.style.display = "none";
-            text2.style.display = "none";
-            text4.style.display = "none";
+            text1.classList.remove("fade");
+            text2.classList.remove("fade");
+            text4.classList.remove("fade");
 
             // circle indicator
             circleIndicator.innerHTML = `
